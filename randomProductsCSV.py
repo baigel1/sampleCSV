@@ -21,7 +21,7 @@ def generate_random_price():
 # Generate and populate the CSV file
 with open("dummy_data.csv", mode="w", newline="") as file:
     writer = csv.writer(file)
-    writer.writerow(["ID", "name", "color", "size", "description", "price"])
+    writer.writerow(["objectID", "name", "color", "size", "description", "price"])
 
     for i in range(1000):
         id = str(i + 1) + fake.word()
